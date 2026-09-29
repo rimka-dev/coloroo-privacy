@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coloroo — Confidentialité</title>
+<style>
+:root {
+  --fond: #fffdf6; --encre: #2f2f38; --doux: #5f5f6d;
+  --accent: #5a2a8a; --trait: #ece6d8; --carte: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #1b1b20; --encre: #ececf1; --doux: #a9a9b6;
+    --accent: #c3a7ee; --trait: #33333c; --carte: #23232a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 16px;
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: var(--fond); color: var(--encre);
+  font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+main { max-width: 480px; width: 100%; text-align: center; }
+h1 { font-size: 1.7rem; margin: 0 0 6px; }
+p { color: var(--doux); margin: 0 0 28px; }
+a.lien {
+  display: block; padding: 16px 20px; margin: 10px 0;
+  background: var(--carte); border: 1px solid var(--trait); border-radius: 14px;
+  color: var(--accent); text-decoration: none; font-weight: 600;
+}
+a.lien:hover { border-color: var(--accent); }
+footer { margin-top: 28px; color: var(--doux); font-size: .88rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Coloroo</h1>
+  <p>Politique de confidentialité</p>
+
+  <a class="lien" href="confidentialite.html">🇫🇷&nbsp; Français</a>
+  <a class="lien" href="privacy.html">🇬🇧&nbsp; English</a>
+  <a class="lien" href="privacidad.html">🇪🇸&nbsp; Español</a>
+
+  <footer><code>com.excelltech.coloroo</code></footer>
+</main>
+</body>
+</html>
